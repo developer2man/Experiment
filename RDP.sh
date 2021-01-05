@@ -19,6 +19,10 @@ sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo adduser fateh chrome-remote-desktop
+sudo apt install qbittorrent -y
+sudo apt install wget -y
+wget -P /root/Downloads/ https://raw.githubusercontent.com/developer2man/Factorial/main/Rename.sh
+start google-chrome-stable
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
