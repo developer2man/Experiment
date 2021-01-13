@@ -20,9 +20,8 @@ sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo adduser fateh chrome-remote-desktop
 sudo apt install qbittorrent -y
-sudo apt install vlc -y
-sudo apt install wget -y
-sudo wget -P /home/fateh/Downloads/ https://raw.githubusercontent.com/developer2man/Factorial/main/Rename.sh
+
+start google-chrome-stable
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
