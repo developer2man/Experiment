@@ -22,16 +22,13 @@ sudo adduser fateh chrome-remote-desktop
 sudo apt install qbittorrent -y
 sudo apt install vlc -y
 sudo apt install wget -y
-
-wget -P /home/fateh/Downloads/ https://raw.githubusercontent.com/developer2man/Factorial/main/Rename.sh
-
+sudo wget -P /home/fateh/Downloads/ https://raw.githubusercontent.com/developer2man/Factorial/main/Rename.sh
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
 read -p "Paste Here: " CRP
 su - fateh -c """$CRP"""
-start google-chrome-stable
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
 then
